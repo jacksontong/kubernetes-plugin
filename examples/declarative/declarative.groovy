@@ -10,7 +10,7 @@ pipeline {
     stage('Run docker') {
       steps {
         container('docker') {
-          sh 'docker jenkinsci/jenkins-agent .'
+          sh 'docker build -t jenkinsci/jenkins-agent .'
         }
       }
     }
