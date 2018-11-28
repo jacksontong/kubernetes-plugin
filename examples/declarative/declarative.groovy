@@ -10,7 +10,7 @@ pipeline {
     stage('Run docker') {
       steps {
         container('docker') {
-          sh 'mvn -version'
+          sh 'docker -version'
         }
       }
     }
