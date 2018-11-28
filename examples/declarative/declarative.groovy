@@ -7,9 +7,9 @@ pipeline {
     }
   }
   stages {
-    stage('Run maven') {
+    stage('Run docker') {
       steps {
-        container('maven') {
+        container('docker') {
           sh 'mvn -version'
         }
       }
